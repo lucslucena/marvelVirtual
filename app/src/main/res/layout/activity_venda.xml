@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".ActivityVenda">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Selecione um Quadrinho:"/>
+
+
+    <Spinner
+        android:id="@+id/spProduto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ></Spinner>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/qtdeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade:"
+        android:inputType="numberSigned"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btAddProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="ADICIONAR PRODUTO"
+            android:onClick="eventAddProduto"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:layout_margin="20dp"
+            android:onClick="eventFecharVenda"
+            android:text="FINALIZAR VENDA"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:text="Carrinho:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL DA COMPRA: R$"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTotalVenda"/>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/ltProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>

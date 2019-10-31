@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".EditarProdutosActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nome do Quadrinho: "
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/nomeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#72FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quantidade para estoque"
+        android:textColor="@color/colorPrimary" />
+
+
+    <EditText
+        android:id="@+id/qtProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Quantidade"
+        android:inputType="numberSigned"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#72FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Edição do Quadrinho"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/edicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Edição"
+        android:inputType="numberSigned"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#72FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Preço do Quadrinho"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/prcProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Preço: "
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#72FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ID do Quadrinho: "
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/idProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Código de barras"
+        android:inputType="numberSigned"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#72FFFFFF" />
+
+    <Button
+        android:id="@+id/btSalvarDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:text="SALVAR DADOS"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>

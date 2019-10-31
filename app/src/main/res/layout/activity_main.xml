@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/btCadastroProduto"
+        android:text="Cadastrar Produtos"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:layout_margin="50dp"
+    android:layout_gravity="center"
+    android:id="@+id/btListaProduto"
+    android:text="Listar Produtos"
+    android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/btVender"
+        android:text="VENDER"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+</LinearLayout>
